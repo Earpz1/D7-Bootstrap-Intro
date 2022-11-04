@@ -50,16 +50,27 @@ const addTrack = function () {
   newRow.appendChild(newArtist)
   newRow.appendChild(newLength)
   newRow.appendChild(newButton)
-  newButtonColumn.appendChild(newButton)
-  newRow.appendChild(newButtonColumn)
+  newLength.appendChild(newButton)
 
   list.appendChild(newRow)
 
   alert(trackName.value + ' has been added!')
 }
 
-const newPage = function () {
+const newPage = function (event) {
+  const container = document.querySelector('.fade-in1')
+  container.classList.add('container-fade-out')
+
   setTimeout(function () {
-    window.location.href = 'http://www.google.com'
+    window.location.href = event.target.id + '.html'
+  }, 1000)
+}
+
+const index = function () {
+  const container = document.querySelector('.fade-in1')
+  container.classList.add('container-fade-out')
+
+  setTimeout(function () {
+    window.location.href = 'index.html'
   }, 1000)
 }

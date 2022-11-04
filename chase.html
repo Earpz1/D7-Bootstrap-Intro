@@ -15,35 +15,38 @@
     <title>Avicii</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand">My Music</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">All Albums </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="avicii.html">Avicii </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="shm.html">Swedish House Mafia </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="chase.html">Chase & Status </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pinkFloyd.html">Pink Floyd </a>
-              </li>
-          </ul>
-        </div>
-      </nav>
-
+   <!-- Navigation bar-->
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand">My Music</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" onclick="newPage(event)" id="index">All Albums </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="newPage(event)" id="avicii">Avicii </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="shm" onclick="newPage(event)">Swedish House Mafia </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" id="chase" onclick="newPage(event)">Chase & Status </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="pinkFloyd" onclick="newPage(event)">Pink Floyd </a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+    <!-- End Navigation bar-->
+<div class="fade-in1">
     <div class="main-container flex">
-        <div class="image">
-        <img class="main-image" src="img/chase.jpg" />
+      <div class="image flex">
+        <a href="#" onclick="index()"><img class="return" src="img/return.png"></a>
+      <img class="main-image" src="img/chase.jpg" />
     </div>
     <div class="text flex-column">
         <h1 class="artist">Chase & Status</h1>
@@ -53,5 +56,7 @@
       </div>
     </div>
 </div>
+</div>
+<script src="js.js"></script>
   </body>
 </html>

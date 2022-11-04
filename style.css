@@ -55,6 +55,10 @@ a {
 .main-container {
   margin-top: 200px;
   margin-left: 300px;
+  animation-name: fadeInAnimation;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .text {
@@ -95,17 +99,18 @@ a {
 .jumbotron {
   background-color: transparent;
   animation-name: fadeInAnimation;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-.row {
+.fade-in {
   animation-name: fadeInAnimation;
-  animation-duration: 2s;
+  animation-duration: 2.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
 #addTrack:hover {
   transform: scale(1.1);
   transition: 1s;
@@ -127,4 +132,18 @@ a {
   display: inline-block;
   transform: translateX(20px);
   animation: showDelete ease 1s;
+}
+
+.container-fade-out {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-1000px);
+  transition: transform 1.5s, visibility 0s 2s, opacity 1s linear;
+}
+
+.return {
+  width: 100px;
+  height: 200px;
+  margin-top: 145px;
+  margin-right: 50px;
 }
