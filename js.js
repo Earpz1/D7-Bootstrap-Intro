@@ -57,3 +57,9 @@ const addTrack = function () {
 
   alert(trackName.value + ' has been added!')
 }
+
+const newPage = function () {
+  setTimeout(function () {
+    window.location.href = 'http://www.google.com'
+  }, 1000)
+}
